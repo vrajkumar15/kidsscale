@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rajkumar_vijayan.kidsbpscale.DataDisplayActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here is the 50th &amp; 95th Percentile BP for 50th percentile Height:"
+        android:id="@+id/tvText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Systolic BP:"
+                android:layout_span="3"
+                android:padding="18dip"
+                android:background="#b0b0b0"
+                android:textColor="#000"
+                android:id="@+id/tvSysTopic" />
+
+        </TableRow>
+
+
+        <!-- Row 2 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvSys50th"
+                android:text="50th Percentile BP: "
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvSys50Val" android:text="0"
+                android:layout_weight="1" android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip" android:gravity="center"/>
+        </TableRow>
+
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvSys95th"
+                android:text="95th Percentile BP: "
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvSys95Val" android:text="0"
+                android:layout_weight="1" android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip" android:gravity="center"/>
+        </TableRow>
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Diastolic BP: "
+                android:layout_span="3"
+                android:padding="18dip"
+                android:background="#b0b0b0"
+                android:textColor="#000"
+                android:id="@+id/tvDiaTopic" />
+
+        </TableRow>
+
+
+        <!-- Row 2 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvDia50th"
+                android:text="50th Percentile BP: "
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvDis50Val" android:text="0"
+                android:layout_weight="1" android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip" android:gravity="center"/>
+        </TableRow>
+
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvDia95th"
+                android:text="95th Percentile BP: "
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvDia95Val" android:text="0"
+                android:layout_weight="1" android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip" android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
